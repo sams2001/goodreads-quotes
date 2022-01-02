@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 i = 1
-url = "https://www.goodreads.com/work/quotes/835372-cuentos-completos" + f"?page={i}"
+url = "" + f"?page={i}"
 
 page = requests.get(url)
 soup = BeautifulSoup(page.text, 'html.parser')
